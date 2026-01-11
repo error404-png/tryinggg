@@ -1,0 +1,17 @@
+requests
+fastapi
+uvicorn
+motor
+pydantic
+python-dotenv
+langchain
+langchain-community
+langchain-huggingface
+langchain-groq
+langchain-mongodb
+pymongo
+certifi
+python-multipart
+langchain-core
+googletrans==4.0.0-rc1
+deep-translator
