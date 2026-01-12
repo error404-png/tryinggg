@@ -24,10 +24,10 @@ const AccessLog = () => {
         setLoading(true);
         try {
             const [usersRes, projectsRes] = await Promise.all([
-                fetch('http://localhost:8000/users', {
+                fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:8000'}/users`, {
                     headers: { 'Authorization': `Bearer ${token}` }
                 }),
-                fetch('http://localhost:8000/projects', {
+                fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:8000'}/projects`, {
                     headers: { 'Authorization': `Bearer ${token}` }
                 })
             ]);
@@ -51,7 +51,7 @@ const AccessLog = () => {
         setActionSuccess('');
 
         try {
-            const res = await fetch('http://localhost:8000/users', {
+            const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:8000'}/users`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
