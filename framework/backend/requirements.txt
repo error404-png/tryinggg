@@ -15,3 +15,9 @@ python-multipart
 langchain-core
 googletrans==4.0.0-rc1
 deep-translator
+passlib[bcrypt]
+python-jose[cryptography]
+botbuilder-core
+botbuilder-schema
+pypdf
+tiktoken
